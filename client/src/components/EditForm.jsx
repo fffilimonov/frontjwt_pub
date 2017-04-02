@@ -1,0 +1,49 @@
+import React, { PropTypes } from 'react';
+import TextareaAutosize from 'react-autosize-textarea';
+import { Link } from 'react-router';
+import { Card, CardText, CardTitle } from 'material-ui/Card';
+import RaisedButton from 'material-ui/RaisedButton';
+import TextField from 'material-ui/TextField';
+
+
+const EditForm = ({
+  onSubmit,
+  onChange,
+  errors,
+  scen
+}) => (
+<Card className="container">
+  <form action="/" onSubmit={onSubmit}>
+    <h2 className="card-heading">Edit scen</h2>
+
+    {errors.summary && <p className="error-message">{errors.summary}</p>}
+
+    <div className="field-line">
+      <TextField
+        floatingLabelText="Name"
+        name="name"
+        onChange={onChange}
+        errorText={errors.name}
+        value={scen.name}
+      />
+    </div>
+
+    <div>
+      <TextareaAutosize name="text" defaultValue={scen.text} onChange={onChange}/>
+    </div>
+
+    <div className="button-line">
+      <RaisedButton type="submit" label="Save" primary />
+    </div>
+  </form>
+</Card>
+);
+
+EditForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  errors: PropTypes.object.isRequired,
+  scen: PropTypes.object.isRequired
+};
+
+export default EditForm;
