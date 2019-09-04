@@ -49,7 +49,7 @@ const LoginForm = ({
   </Card>
 );
 
-LogininForm.propTypes = {
+LoginForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   errors: PropTypes.object.isRequired,
