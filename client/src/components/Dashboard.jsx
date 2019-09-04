@@ -40,9 +40,9 @@ const Dashboard = ({
           />
         </div>
 
-        <RadioButtonGroup
+{/*        <RadioButtonGroup
           name="browser"
-          defaultSelected="firefox"
+          defaultSelected="chrome"
           onChange={onRadio}
         >
           <RadioButton
@@ -56,7 +56,7 @@ const Dashboard = ({
             style={styles.radioButton}
           />
         </RadioButtonGroup>
-
+*/}
 
         <div className="button-line">
           <RaisedButton

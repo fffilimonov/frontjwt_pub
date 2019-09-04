@@ -15,8 +15,8 @@ class AddPage extends React.Component {
     this.state = {
       errors: {},
       scen: {
-        name: 'Check my info',
-        text: 'I open "https://google.com"\nI fill 1 input with "my browser info"\nI will see "What\'s My Browser"\nI click on the text \"What\'s My Browser"\n'
+        name: 'Self check',
+        text: 'I will see \"Test web like user.\"\nI click on the text \"Log in\"\nI fill 1 input with \"xxx@yyy.zzz\"\nI fill 2 input with \"12345\"\nI click on the text \"LOG IN\"\nI will see \"401\"\n'
       }
     };
 

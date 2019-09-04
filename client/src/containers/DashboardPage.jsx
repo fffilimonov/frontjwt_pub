@@ -15,7 +15,7 @@ class DashboardPage extends React.Component {
       scens: [],
       loaded: false,
       seconds: "0",
-      browser: "firefox"
+      browser: "chrome"
     };
 
     this.addScen = this.addScen.bind(this);
