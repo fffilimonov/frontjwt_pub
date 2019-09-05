@@ -16,7 +16,7 @@ class AddPage extends React.Component {
       errors: {},
       scen: {
         name: 'Self check',
-        text: 'I open \"http://likeuser.com\"\nI will see \"Test web like user.\"\nI click on the text \"Log in\"\nI fill 1 input with \"xxx@yyy.zzz\"\nI fill 2 input with \"12345\"\nI click on the element \".button-line button\"\nI will see \"401\"\n'
+        text: 'Given I am on url \"http://likeuser.com\"\nThen I wait for text \"Test web like user.\"\nThen I click \"Sign up\"\nThen I wait for text \"CREATE NEW ACCOUNT\"\nThen I fill field \"Email\" with \"xxx@yyy.zzz\"\nThen I fill field \"Password\" with \"12345\"\nThen I click \".button-line div\"\nThen I wait for text \"Check email to activate account\"\nThen I fill field \"Email\" with \"xxx@yyy.zzz\"\nThen I fill field \"Password\" with \"12345\"\nThen I click \".button-line div\"\nThen I wait for text \"401\"\n'
       }
     };
 
